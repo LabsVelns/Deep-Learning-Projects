@@ -48,3 +48,7 @@ The `Blocks.py` file contains the definition of the building blocks used in the 
 ## Conclusion
 
 This app demonstrates how to use the ESRGAN model to perform video super-resolution. The app is easy to use and can be used to process videos of any size or resolution.
+
+
+<img width="1280" alt="image" src="https://github.com/LabsVelns/Deep-Learning-Projects/assets/68092358/963894d0-3264-48ab-9d1e-b748e9dbf10f">
+
