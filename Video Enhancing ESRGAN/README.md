@@ -14,3 +14,4 @@ The major contributions of this revision are:
 6. Using the feature extractor to create a perceptual loss.
 7. Iterating over a training dataset and optimizing the model to reduce the perceptual loss.
 8. Testing the model by generating super-resolution images using an unseen dataset (see `test_video_finetune.py`).
+
