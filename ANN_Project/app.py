@@ -8,15 +8,15 @@ import pandas as pd
 model = load_model('ANN_Project/ann_model.h5')
 
 # Load the scaler
-with open('scaler.pkl', 'rb') as f:
+with open('ANN_Project/scaler.pkl', 'rb') as f:
     scaler = pickle.load(f)
 
 # Load the label encoder 
-with open('label_encoder_gender.pkl', 'rb') as f:
+with open('ANN_Project/label_encoder_gender.pkl', 'rb') as f:
     label_encoder = pickle.load(f)
 
 # Load the one-hot encoder
-with open('OneHotGeo.pkl', 'rb') as f:
+with open('ANN_Project/OneHotGeo.pkl', 'rb') as f:
     onehot_encoder = pickle.load(f)
     
 st.title('Customer Churn Prediction')
@@ -69,4 +69,5 @@ if prediction_proba > 0.5:
     st.write('The customer is likely to churn.')
 else:
     st.write('The customer is not likely to churn.')
+
 
