@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 
 # Load the trained model
-model = load_model('ann_model.h5')
+model = load_model('ANN_Project/ann_model.h5')
 
 # Load the scaler
 with open('scaler.pkl', 'rb') as f:
@@ -69,3 +69,4 @@ if prediction_proba > 0.5:
     st.write('The customer is likely to churn.')
 else:
     st.write('The customer is not likely to churn.')
+
