@@ -7,7 +7,7 @@ from keras.preprocessing import sequence
 
 @st.cache_resource # Cache the model loading
 def load_sentiment_model():
-    return load_model("rnn_imdb_model.keras", compile=False)
+    return load_model("RNN_Project/rnn_imdb_model.keras", compile=False)
 
 model = load_sentiment_model()
 word_index = imdb.get_word_index()
@@ -38,4 +38,5 @@ if st.button("Analyze Sentiment"):
     st.write(f"Sentiment: **{sentiment}**")
     st.write(f"Confidence: **{confidence:.2f}**")
 else:
+
     st.write("Please enter a valid movie review.")
