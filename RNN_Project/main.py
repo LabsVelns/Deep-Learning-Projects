@@ -26,7 +26,7 @@ def preprocess_text(text):
 def predict_sentiment(review):
     preprocessed_input=preprocess_text(review)
     prediction=model.predict(preprocessed_input)
-    sentiment = 'Positive' if prediction[0][0] > 0.4 else 'Negative'
+    sentiment = 'Positive👌😊' if prediction[0][0] > 0.4 else 'Negative😬👎'
     return sentiment, prediction[0][0]
 
 st.title("Movie Review Sentiment Analysis")
@@ -40,3 +40,4 @@ if st.button("Analyze Sentiment"):
 else:
 
     st.write("Please enter a valid movie review.")
+
