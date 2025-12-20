@@ -1,0 +1,20 @@
+# RNN Movie Review Sentiment Analysis
+
+Simple Streamlit app that loads a trained RNN sentiment model (IMDb) and predicts whether a movie review is Positive or Negative.
+
+## Features
+- Web UI via Streamlit
+- Uses pre-trained RNN model (`rnn_imdb_model.keras`)
+- Tokenizes input using Keras IMDb word index and pads to length 500
+- Caches model load for faster startup
+
+## Requirements
+- Windows
+- Python 3.8+ (recommended)
+- Packages: streamlit, tensorflow, keras, (optional) h5py
+
+You can install all dependencies with:
+PowerShell:
+````powershell
+[Activate.ps1](http://_vscodecontentref_/0)
+pip install -r [requirements.txt](http://_vscodecontentref_/1)
