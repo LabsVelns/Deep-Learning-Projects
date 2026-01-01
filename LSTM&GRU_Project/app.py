@@ -4,11 +4,11 @@ import streamlit as st
 from keras.models import load_model
 
 
-with open('tokenizer.pickle', 'rb') as handle:
+with open('LSTM&GRU_Project/Tokenizer.pickle', 'rb') as handle:
     tokenizer = pickle.load(handle)
 
 
-model = load_model('next_word_predictor_lstm.h5')
+model = load_model('LSTM&GRU_Project/next_word_predictor_lstm.h5')
 
 def predic_next_word(model, text, tokenizer, max_seq_len):
     sequence = tokenizer.texts_to_sequences([text])
@@ -27,4 +27,5 @@ user_input = st.text_input("Enter a phrase:")
 if st.button('Predict'):
     max_seq_len = model.input_shape[1] + 1
     next_word = predic_next_word(model, user_input, tokenizer, max_seq_len)
+
     st.write(f'The predicted next word is: {next_word}')
